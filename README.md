@@ -1,13 +1,15 @@
-# mydatepicker
+# ng4-datepicker
 
 **Angular date picker**
 
 [![Build Status](https://travis-ci.org/kekeh/mydatepicker.svg?branch=master)](https://travis-ci.org/kekeh/mydatepicker)
 [![codecov](https://codecov.io/gh/kekeh/mydatepicker/branch/master/graph/badge.svg)](https://codecov.io/gh/kekeh/mydatepicker)
-[![npm](https://img.shields.io/npm/v/mydatepicker.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/mydatepicker)
+[![npm](https://img.shields.io/npm/v/mydatepicker.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/ng4-datepicker)
 
 ## Description
 Highly configurable Angular date picker. Compatible with __Angular2__ and __Angular4__ versions.
+
+This is a fork of [kekeh/mydatepicker](https://github.com/kekeh/mydatepicker). I am still updating the documentation.
 
 Online demo is [here](http://kekeh.github.io/mydatepicker)
 
@@ -59,7 +61,7 @@ Use one of the following three options.
 
 ### 1. ngModel binding
 
-In this option the ngModel binding is used. [Here](https://github.com/kekeh/mydatepicker/tree/master/sampleapp/sample-date-picker-access-modifier)
+In this option the ngModel binding is used. [Here](https://github.com/Manish2005/ng4-datepicker/tree/master/sampleapp/sample-date-picker-access-modifier)
 is an example application. It shows how to use the __ngModel__.
 
 To use ngModel define the application class as follows:
@@ -93,7 +95,7 @@ Add the following snippet inside your template:
 
 ### 2. Reactive forms
 
-In this option the value accessor of reactive forms is used. [Here](https://github.com/kekeh/mydatepicker/tree/master/sampleapp/sample-date-picker-access-modifier)
+In this option the value accessor of reactive forms is used. [Here](https://github.com/Manish2005/ng4-datepicker/tree/master/sampleapp/sample-date-picker-access-modifier)
 is an example application. It shows how to use the __formControlName__.
 
 To use reactive forms define the application class as follows:
@@ -154,7 +156,7 @@ Add the following snippet inside your template:
 
 ### 3. Callbacks
 
-In this option the mydatepicker sends data back to host application using callbacks. [Here](https://github.com/kekeh/mydatepicker/tree/master/sampleapp/sample-date-picker-normal)
+In this option the mydatepicker sends data back to host application using callbacks. [Here](https://github.com/Manish2005/ng4-datepicker/tree/master/sampleapp/sample-date-picker-normal)
 is an example application. It shows how to use callbacks.
 
 To use callbacks define the application class as follows:
@@ -191,19 +193,19 @@ Add the following snippet inside your template:
 
 ### options attribute
 
-Value of the __options__ attribute is a type of [IMyDpOptions](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-options.interface.ts). It can contain the following properties.
+Value of the __options__ attribute is a type of [IMyDpOptions](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-options.interface.ts). It can contain the following properties.
 
 | Option        | Default       | Type   | Description  |
 | :------------ | :------------ | :----- | :--------- |
-| __dayLabels__     | {su: 'Sun', mo: 'Mon', tu: 'Tue', we: 'Wed', th: 'Thu', fr: 'Fri', sa: 'Sat'} | [IMyDayLabels](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-day-labels.interface.ts) | Day labels visible on the selector. |
-| __monthLabels__   | { 1: 'Jan', 2: 'Feb', 3: 'Mar', 4: 'Apr', 5: 'May', 6: 'Jun', 7: 'Jul', 8: 'Aug', 9: 'Sep', 10: 'Oct', 11: 'Nov', 12: 'Dec' } | [IMyMonthLabels](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-month-labels.interface.ts) | Month labels visible on the selector. |
+| __dayLabels__     | {su: 'Sun', mo: 'Mon', tu: 'Tue', we: 'Wed', th: 'Thu', fr: 'Fri', sa: 'Sat'} | [IMyDayLabels](https://github.com/kManish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-day-labels.interface.ts) | Day labels visible on the selector. |
+| __monthLabels__   | { 1: 'Jan', 2: 'Feb', 3: 'Mar', 4: 'Apr', 5: 'May', 6: 'Jun', 7: 'Jul', 8: 'Aug', 9: 'Sep', 10: 'Oct', 11: 'Nov', 12: 'Dec' } | [IMyMonthLabels](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-month-labels.interface.ts) | Month labels visible on the selector. |
 | __dateFormat__    | yyyy-mm-dd | string |  Date format on the selection area and the callback. For example: d.m.yyyy, dd.mm.yyyy, yyyy-m-d, yyyy-mm-dd, d mmm yyyy, dd mmm yyyy (d = Day not leading zero, dd = Day with leading zero, m = Month not leading zero, mm = Month with leading zero, mmm = Month as a text, yyyy = Year four digit) |
 | __showTodayBtn__   | true | boolean | Show 'Today' button on calendar. |
 | __todayBtnTxt__   | Today | string | Today button text. Can be used if __showTodayBtn = true__. |
 | __firstDayOfWeek__   | mo | string | First day of week on calendar. One of the following: mo, tu, we, th, fr, sa, su |
 | __sunHighlight__   | true | boolean | Sunday red colored on calendar. |
 | __satHighlight__   | false | boolean | Saturday red colored on calendar. |
-| __highlightDates__   | no default value | Array<[IMyDate](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-date.interface.ts)> | Dates red colored on calendar. For example: [{year: 2016, month: 11, day: 14}, {year: 2016, month: 1, day: 15}] |
+| __highlightDates__   | no default value | Array<[IMyDate](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-date.interface.ts)> | Dates red colored on calendar. For example: [{year: 2016, month: 11, day: 14}, {year: 2016, month: 1, day: 15}] |
 | __markCurrentDay__   | true | boolean | Is current day (today) marked on calendar. |
 | __markCurrentMonth__   | true | boolean | Is current month marked on calendar. Can be used if __monthSelector = true__. |
 | __markCurrentYear__   | true | boolean | Is current year marked on calendar. Can be used if __yearSelector = true__. |
@@ -211,15 +213,15 @@ Value of the __options__ attribute is a type of [IMyDpOptions](https://github.co
 | __yearSelector__  | true | boolean | If year label is selected opens a selector of years. |
 | __minYear__   | 1000 | number | Minimum allowed year in calendar. Cannot be less than 1000. |
 | __maxYear__   | 9999 | number | Maximum allowed year in calendar. Cannot be more than 9999. |
-| __disableUntil__   | no default value | [IMyDate](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-date.interface.ts) | Disable dates backward starting from the given date. For example: {year: 2016, month: 6, day: 26}. To reset existing disableUntil value set: {year: 0, month: 0, day: 0} |
-| __disableSince__   | no default value | [IMyDate](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-date.interface.ts) | Disable dates forward starting from the given date. For example: {year: 2016, month: 7, day: 22}. To reset existing disableSince value set: {year: 0, month: 0, day: 0} |
-| __disableDays__   | no default value  | Array<[IMyDate](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-date.interface.ts)> | Disable single dates one by one. Array of disabled dates. For example: [{year: 2016, month: 11, day: 14}, {year: 2016, month: 1, day: 15}]. To reset existing disableDays value set empty array to it. |
-| __enableDays__   | no default value  | Array<[IMyDate](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-date.interface.ts)> | Enable given dates one by one if the date is disabled. For example if you disable the date range and want to enable some dates in range. Array of enabled days. For example: [{year: 2016, month: 11, day: 14}, {year: 2016, month: 1, day: 15}]. To reset existing enableDays value set empty array to it. |
-| __disableDateRanges__   | no default value | Array<[IMyDateRange](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-date-range.interface.ts)> | Disable date ranges. For example: [{begin: {year: 2016, month: 11, day: 14}, end: {year: 2016, month: 11, day: 20}}]. To reset existing disableDateRanges value set empty array to it. |
+| __disableUntil__   | no default value | [IMyDate](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-date.interface.ts) | Disable dates backward starting from the given date. For example: {year: 2016, month: 6, day: 26}. To reset existing disableUntil value set: {year: 0, month: 0, day: 0} |
+| __disableSince__   | no default value | [IMyDate](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-date.interface.ts) | Disable dates forward starting from the given date. For example: {year: 2016, month: 7, day: 22}. To reset existing disableSince value set: {year: 0, month: 0, day: 0} |
+| __disableDays__   | no default value  | Array<[IMyDate](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-date.interface.ts)> | Disable single dates one by one. Array of disabled dates. For example: [{year: 2016, month: 11, day: 14}, {year: 2016, month: 1, day: 15}]. To reset existing disableDays value set empty array to it. |
+| __enableDays__   | no default value  | Array<[IMyDate](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-date.interface.ts)> | Enable given dates one by one if the date is disabled. For example if you disable the date range and want to enable some dates in range. Array of enabled days. For example: [{year: 2016, month: 11, day: 14}, {year: 2016, month: 1, day: 15}]. To reset existing enableDays value set empty array to it. |
+| __disableDateRanges__   | no default value | Array<[IMyDateRange](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-date-range.interface.ts)> | Disable date ranges. For example: [{begin: {year: 2016, month: 11, day: 14}, end: {year: 2016, month: 11, day: 20}}]. To reset existing disableDateRanges value set empty array to it. |
 | __disableWeekends__   | false | boolean | Disable weekends (Saturday and Sunday). |
 | __disableWeekdays__   | no default value | Array< string > | Disable weekdays. Array of weekdays to disable. Weekdays are same strings as the __firstDayOfWeek__ option. For example: ['tu', 'we'] which disables Tuesdays and Wednesdays. |
-| __markDates__   | no default value | Array<[IMyMarkedDates](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-marked-dates.interface.ts)> | Mark dates for different colors. For example: [{dates: [{year: 2016, month: 11, day: 14}, {year: 2016, month: 12, day: 16}], color: '#004198'}, {dates: [{year: 2017, month: 10, day: 1}, {year: 2017, month: 11, day: 4}], color: 'green'}]. To reset existing markDates value set empty array to it. |
-| __markWeekends__   | no default value | [IMyMarkedDate](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-marked-date.interface.ts) | Mark weekends (Saturday and Sunday). For example: {marked: true, color: 'red'}. Value of color can be any CSS color code. To reset existing markWeekends set: {marked: false, color: ''} |
+| __markDates__   | no default value | Array<[IMyMarkedDates](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-marked-dates.interface.ts)> | Mark dates for different colors. For example: [{dates: [{year: 2016, month: 11, day: 14}, {year: 2016, month: 12, day: 16}], color: '#004198'}, {dates: [{year: 2017, month: 10, day: 1}, {year: 2017, month: 11, day: 4}], color: 'green'}]. To reset existing markDates value set empty array to it. |
+| __markWeekends__   | no default value | [IMyMarkedDate](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-marked-date.interface.ts) | Mark weekends (Saturday and Sunday). For example: {marked: true, color: 'red'}. Value of color can be any CSS color code. To reset existing markWeekends set: {marked: false, color: ''} |
 | __disableHeaderButtons__   | true | boolean | Prevent to change the calendar view with header buttons if previous or next month are fully disabled by disableUntil or disableSince. |
 | __showWeekNumbers__   | false | boolean | Are week numbers visible or not on calendar. Can be used if __firstDayOfWeek = mo__. |
 | __selectorHeight__   | 232px | string | Selector height. |
@@ -272,7 +274,7 @@ __th__, __ko-kr__, __da__, __lt__, __vi__, __bn__, __bg__, __hr__, __ar__ and __
 
 The __locale__ options can be override by __options__ attribute.
 
-* new locale data can be added to [this](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/services/my-date-picker.locale.service.ts)
+* new locale data can be added to [this](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/services/my-date-picker.locale.service.ts)
 file. If you want to add a new locale create a pull request.
 * locales can be tested [here](http://kekeh.github.io/mydatepicker/#inlinemode)
 
@@ -281,11 +283,11 @@ file. If you want to add a new locale create a pull request.
 Provide the initially chosen date that will display both in the text input field
 and provide the default for the popped-up selector.
 
-Type of the __selDate__ attribute can be a string or an [IMyDate](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-date.interface.ts) object.
+Type of the __selDate__ attribute can be a string or an [IMyDate](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-date.interface.ts) object.
   * the string must be in the same format as the __dateFormat__ option is. For example '2016-06-26'
   * the object must be in the IMyDate format. For example: {year: 2016, month: 6, day: 26}
 
-[Here](https://github.com/kekeh/mydatepicker/wiki/Initialize-with-selDate-attribute) is an example on how to use this attribute.
+[Here](https://github.com/Manish2005/ng4-datepicker/wiki/Initialize-with-selDate-attribute) is an example on how to use this attribute.
 
 ### defaultMonth attribute
 
@@ -295,25 +297,25 @@ a different year and month to be the default for a freshly chosen date
 picking operation, specify a __defaultMonth__ attribute.
 
 Value of the defaultMonth attribute can be:
-  * [IMyDefaultMonth](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-default-month.interface.ts) object. The value of __defMonth__ property can be a string which contain year number and month number separated by delimiter. The delimiter can be any special character. For example: __08-2016__ or __08/2016__.
+  * [IMyDefaultMonth](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-default-month.interface.ts) object. The value of __defMonth__ property can be a string which contain year number and month number separated by delimiter. The delimiter can be any special character. For example: __08-2016__ or __08/2016__.
   * a string which contain year number and month number separated by delimiter. The delimiter can be any special character. For example: __08-2016__ or __08/2016__.
 
-[Here](https://github.com/kekeh/mydatepicker/wiki/Initialize-with-defaultMonth-attribute) is an example on how to use this attribute.
+[Here](https://github.com/Manish2005/ng4-datepicker/wiki/Initialize-with-defaultMonth-attribute) is an example on how to use this attribute.
 
 ### placeholder attribute
 
-Placeholder text in the input field. [Here](https://github.com/kekeh/mydatepicker/wiki/Set-placeholder) is an example on how to use this attribute.
+Placeholder text in the input field. [Here](https://github.com/Manish2005/ng4-datepicker/wiki/Set-placeholder) is an example on how to use this attribute.
 
 ### disabled attribute
 
-Boolean value indicating is the component disabled or not. [Here](https://github.com/kekeh/mydatepicker/wiki/Disable-component-with-disabled-attribute) is an example on how to use this attribute.
+Boolean value indicating is the component disabled or not. [Here](https://github.com/Manish2005/ng4-datepicker/wiki/Disable-component-with-disabled-attribute) is an example on how to use this attribute.
 
 ### selector attribute
 
 Selector can be opened or closed using this attribute. Value of the selector attribute can be:
-  * [IMySelector](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-selector.interface.ts) object. The value of __open__ property is a boolean value indicating the state of the selector.
+  * [IMySelector](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-selector.interface.ts) object. The value of __open__ property is a boolean value indicating the state of the selector.
 
-[Here](https://github.com/kekeh/mydatepicker/wiki/Open-selector-with-selector-attribute) is an example on how to use this attribute. Another way is to call a function of mydatepicker. [Here](https://github.com/kekeh/mydatepicker/wiki/Calling-date-picker-function) is an example.
+[Here](https://github.com/Manish2005/ng4-datepicker/wiki/Open-selector-with-selector-attribute) is an example on how to use this attribute. Another way is to call a function of mydatepicker. [Here](https://github.com/Manish2005/ng4-datepicker/wiki/Calling-date-picker-function) is an example.
 
 ## Callbacks
 
@@ -324,7 +326,7 @@ Selector can be opened or closed using this attribute. Value of the selector att
     * event.jsdate: Javascript Date object
     * event.formatted: Date string in the same format as dateFormat option is: '2016-11-22'
     * event.epoc: Epoc time stamp number: 1479765600
-  * event parameter type is [IMyDateModel](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-date-model.interface.ts)
+  * event parameter type is [IMyDateModel](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-date-model.interface.ts)
 
   * Example of the dateChanged callback:
   ```js
@@ -339,7 +341,7 @@ Selector can be opened or closed using this attribute. Value of the selector att
     * event.value: Value of the input field. For example: '2016-11-22'
     * event.dateFormat: Date format string in the same format as dateFormat option is. For example: 'yyyy-mm-dd'
     * event.valid: Boolean value indicating is the input field value valid or not. For example: true
-  * event parameter type is [IMyInputFieldChanged](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-input-field-changed.interface.ts)
+  * event parameter type is [IMyInputFieldChanged](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-input-field-changed.interface.ts)
 
   * Example of the input field changed callback:
   ```js
@@ -353,9 +355,9 @@ Selector can be opened or closed using this attribute. Value of the selector att
   * event parameter:
     * event.year: Year number in calendar. For example: 2016
     * event.month: Month number in calendar. For example: 11
-    * event.first: First day of selected month and year. Type of [IMyWeekday](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-weekday.interface.ts). For example: {number: 1, weekday: "tu"}
-    * event.last: Last day of selected month and year. Type of [IMyWeekday](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-weekday.interface.ts). For example: {number: 30, weekday: "we"}
-  * event parameter type is [IMyCalendarViewChanged](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-calendar-view-changed.interface.ts)
+    * event.first: First day of selected month and year. Type of [IMyWeekday](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-weekday.interface.ts). For example: {number: 1, weekday: "tu"}
+    * event.last: Last day of selected month and year. Type of [IMyWeekday](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-weekday.interface.ts). For example: {number: 30, weekday: "we"}
+  * event parameter type is [IMyCalendarViewChanged](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-calendar-view-changed.interface.ts)
   * values of the weekday property are same as values of the __firstDayOfWeek__ option
 
   * Example of the calendar view changed callback:
@@ -389,7 +391,7 @@ Selector can be opened or closed using this attribute. Value of the selector att
       * 1 = focus to input box
       * 2 = focus out of input box
     * event.value: Value of input box
-  * event parameter type is [IMyInputFocusBlur](https://github.com/kekeh/mydatepicker/blob/master/src/my-date-picker/interfaces/my-input-focus-blur.interface.ts)
+  * event parameter type is [IMyInputFocusBlur](https://github.com/Manish2005/ng4-datepicker/blob/master/src/my-date-picker/interfaces/my-input-focus-blur.interface.ts)
 
   * Example of the input focus blur callback:
   ```js
@@ -405,10 +407,10 @@ The styles of the component can be changed by overriding the styles.
 Create a separate stylesheet file which contain the changed styles. Then import the stylesheet file in the place which
 is after the place where the component is loaded.
 
-The [sampleapp](https://github.com/kekeh/mydatepicker/tree/master/sampleapp) of the component contain an example:
+The [sampleapp](https://github.com/Manish2005/ng4-datepicker/tree/master/sampleapp) of the component contain an example:
 
-* [override.css](https://github.com/kekeh/mydatepicker/blob/master/sampleapp/override.css) contain the changed styles.
-* [index.html](https://github.com/kekeh/mydatepicker/blob/master/sampleapp/index.html) contain import of the override.css file.
+* [override.css](https://github.com/Manish2005/ng4-datepicker/blob/master/sampleapp/override.css) contain the changed styles.
+* [index.html](https://github.com/Manish2005/ng4-datepicker/blob/master/sampleapp/index.html) contain import of the override.css file.
 
 
 ## Development of this component
