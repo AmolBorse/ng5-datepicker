@@ -9,7 +9,7 @@ export * from "./my-calendar-year.interface";
 export * from "./my-week.interface";
 export * from "./my-options.interface";
 export * from "./my-locale.interface";
-// export * from "./my-date-model.interface";
+export * from "./my-date-model.interface";
 export * from "./my-input-field-changed.interface";
 export * from "./my-input-focus-blur.interface";
 export * from "./my-weekday.interface";
