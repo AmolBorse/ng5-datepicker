@@ -25,7 +25,7 @@ enum MonthId { prev = 1, curr = 2, next = 3 }
 const MMM = "mmm";
 
 @Component({
-    selector: "app-datepicker",
+    selector: "app-datepicker, [app-datepicker]",
     exportAs: "appdatepicker",
     styles: [myDpStyles],
     template: myDpTpl,

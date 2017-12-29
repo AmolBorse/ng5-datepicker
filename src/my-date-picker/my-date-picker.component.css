@@ -58,7 +58,7 @@
     position: absolute;
     padding: 0;
     border: 1px solid #CCC;
-    z-index: 100;
+    z-index: 1000;
     animation: selectorfadein 0.1s;
 }
 
